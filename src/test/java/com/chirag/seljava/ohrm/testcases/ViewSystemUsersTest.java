@@ -1,5 +1,7 @@
 package com.chirag.seljava.ohrm.testcases;
 
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.chirag.seljava.ohrm.pageobjects.HomeLogin;
@@ -10,6 +12,8 @@ import com.chirag.seljava.ohrm.pageobjects.mainmenu.admin.usermanagement.users.V
 import com.chirag.seljava.ohrm.resources.Base;
 
 public class ViewSystemUsersTest extends Base {
+	
+	private static Logger log = loggingMethod(ViewSystemUsersTest.class.getName());
 	
 	@Test
 	public void searchSystemUsers() throws InterruptedException {
@@ -29,6 +33,8 @@ public class ViewSystemUsersTest extends Base {
 		ViewSystemUsers viewSystemUsers = new ViewSystemUsers(driver);
 		viewSystemUsers.setSearchUsername("Admin");
 		viewSystemUsers.clickSearchButton();
+		Assert.assertTrue(false);
+		log.info("Test is done");
 		
 		Thread.sleep(5000);
 	}
