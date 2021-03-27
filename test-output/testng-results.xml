@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33947" started-at="2020-09-29T19:58:00 IST" finished-at="2020-09-29T19:58:34 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33947" started-at="2020-09-29T19:58:00 IST" finished-at="2020-09-29T19:58:34 IST">
+      <class name="com.chirag.seljava.ohrm.testcases.AnotherTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.chirag.seljava.ohrm.testcases.AnotherTest@2beee7ff]" name="setup" is-config="true" duration-ms="28735" started-at="2020-09-29T19:57:32 IST" finished-at="2020-09-29T19:58:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.chirag.seljava.ohrm.testcases.AnotherTest@2beee7ff]" name="login" duration-ms="33875" started-at="2020-09-29T19:58:00 IST" finished-at="2020-09-29T19:58:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.chirag.seljava.ohrm.testcases.AnotherTest@2beee7ff]" name="teardown" is-config="true" duration-ms="1269" started-at="2020-09-29T19:58:35 IST" finished-at="2020-09-29T19:58:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.chirag.seljava.ohrm.testcases.AnotherTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

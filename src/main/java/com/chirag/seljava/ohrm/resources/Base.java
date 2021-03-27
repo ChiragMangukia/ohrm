@@ -45,4 +45,11 @@ public class Base {
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		Files.copy(screenshotFile, new File(fileName + ".png"));
 	}
+	
+	public String getScreenshot1(String fileName) throws IOException {
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(screenshotFile, new File(fileName + ".png"));
+		return fileName + ".png"
+				+ "";
+	}
 }

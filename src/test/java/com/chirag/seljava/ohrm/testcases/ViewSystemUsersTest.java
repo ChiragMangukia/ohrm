@@ -33,10 +33,9 @@ public class ViewSystemUsersTest extends Base {
 		ViewSystemUsers viewSystemUsers = new ViewSystemUsers(driver);
 		viewSystemUsers.setSearchUsername("Admin");
 		viewSystemUsers.clickSearchButton();
+		Thread.sleep(3000);
 		Assert.assertTrue(false);
 		log.info("Test is done");
-		
-		Thread.sleep(5000);
 	}
 
 }

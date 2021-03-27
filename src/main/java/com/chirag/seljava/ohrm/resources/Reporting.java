@@ -11,6 +11,7 @@ import org.testng.TestListenerAdapter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -75,7 +76,8 @@ public class Reporting extends TestListenerAdapter {
 
 		if (file.exists()) {
 			try {
-				logger.fail("Screenshot:" + logger.addScreenCaptureFromPath(screenshotPath + ".png"));
+				logger.fail(tr.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath + ".png").build());
+				//logger.fail("Screenshot:" + logger.addScreenCaptureFromPath(screenshotPath + ".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
