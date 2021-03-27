@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeSuite;
 
 import com.google.common.io.Files;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Base {
 	
 	private static Logger log = loggingMethod(Base.class.getName());
@@ -25,7 +27,8 @@ public class Base {
 	
 	@BeforeSuite
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		log.info("Chrome driver initialized and broswer maximized");

@@ -17,7 +17,7 @@ public class HomeLoginTest extends Base {
 		homeLogin.setPassword(homePassword);
 		homeLogin.clickSubmit();
 		
-		String expectedURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard1234";
+		String expectedURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		
 		if(driver.getCurrentUrl().equals(expectedURL)) {
 			Assert.assertTrue(true);
